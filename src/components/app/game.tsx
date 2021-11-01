@@ -63,7 +63,7 @@ const Game: React.FC<{
     const [correctPoke, setCorrectPoke] = useState("");
     const [picture, setPicture] = useState("");
     const [allPokes, setAllPokes] = useState<string[]>([]);
-    const [countRounds, setCountRounds] = useState(0);
+    const [countRounds, setCountRounds] = useState(1);
     const [correct, setCorrect] = useState(0);
     const [ time, setTime ] = useState(TIME_LIMIT_QUESTION);
     const [isLoading, setIsLoading] = useState(false);
@@ -108,7 +108,7 @@ const Game: React.FC<{
     };
 
     useEffect(() => {
-        if(countRounds > NUM_ROUNDS - 1) {
+        if(countRounds > NUM_ROUNDS) {
             if (correct > highScore) {
                 setHighScore(correct);
             }
