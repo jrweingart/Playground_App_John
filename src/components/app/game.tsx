@@ -124,7 +124,7 @@ const Game: React.FC<{
             <div className="counterAndScore">
                 <div>Round: {countRounds}</div>
                 {isLoading || <Counter setTime={setTime} hitLimit={() => onClickPokeButton(" ")} time={time} limit={TIME_LIMIT_QUESTION}/>}
-                <div>Score: {correct} / {countRounds}</div>
+                <div>Score: {correct} / {countRounds - 1}</div>
             </div>
             <h1> What is the name of this pokemon? </h1>
             <div className="mainImage">
