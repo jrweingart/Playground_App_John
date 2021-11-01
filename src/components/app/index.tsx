@@ -6,7 +6,7 @@ import Game from "./game";
 export const NUM_POKEMON = 898;
 export const NUM_OPTIONS = 4;
 export const NUM_ROUNDS = 10;
-export const TIME_LIMIT_QUESTION = 30; //5s time limit per question
+export const TIME_LIMIT_QUESTION = 5; //5s time limit per question
 
 const Styled = styled.div`
     text-align: center;
